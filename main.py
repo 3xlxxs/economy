@@ -1,9 +1,7 @@
 from discord.ext import commands
-from dotenv import load_dotenv
 import discord
 import os
 
-load_dotenv()
 bot = commands.Bot(command_prefix=",", intents=discord.Intents.all())
 
 @bot.slash_command(name="add", integration_types={discord.IntegrationType.user_install, discord.IntegrationType.guild_install})
